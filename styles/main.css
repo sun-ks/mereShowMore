@@ -1,0 +1,50 @@
+.title-h2 {
+    font-family: Avenir, verdana;
+}
+
+
+.mere-show-more {
+    position: relative;
+    width: 250px;
+    font-family: 'avenir', verdana;
+    margin-bottom: 84px;
+}
+
+.less {
+    display: none;
+}
+
+label {
+    position: absolute;
+    bottom: -40px;
+    display: block;
+    background: #08C;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.mere-show-more--cont-hidden {
+    overflow: hidden;
+}
+
+input[type=checkbox]:checked ~ label .more  {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ label .less {
+    display: block;
+}
+
+input[type=checkbox]:checked ~ .mere-show-more--cont-hidden {
+    overflow: auto;
+    height: auto !important;
+}
