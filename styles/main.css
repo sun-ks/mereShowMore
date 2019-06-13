@@ -10,11 +10,11 @@
     margin-bottom: 84px;
 }
 
-.less {
+.mere-show-more--less {
     display: none;
 }
 
-label {
+.mere-show-more--label {
     position: absolute;
     bottom: -40px;
     display: block;
@@ -26,25 +26,26 @@ label {
     font-weight: bold;
 }
 
-input[type=checkbox] {
+.mere-show-more--input {
     position: absolute;
     top: -9999px;
     left: -9999px;
+    display: none;
 }
 
 .mere-show-more--cont-hidden {
     overflow: hidden;
 }
 
-input[type=checkbox]:checked ~ label .more  {
+.mere-show-more--input:checked ~ .mere-show-more--label .mere-show-more--more {
     display: none;
 }
 
-input[type=checkbox]:checked ~ label .less {
+.mere-show-more--input:checked ~ .mere-show-more--label .mere-show-more--less {
     display: block;
 }
 
-input[type=checkbox]:checked ~ .mere-show-more--cont-hidden {
+.mere-show-more--input:checked ~ .mere-show-more--cont-hidden {
     overflow: auto;
     height: auto !important;
 }

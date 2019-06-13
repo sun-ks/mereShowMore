@@ -4,10 +4,10 @@ const mereShowMore = (obj) => {
         btn = el.querySelector('.mere-show-more--label-js'),
         fullCont = el.querySelector('.mere-show-more--cont-full-js'),
 
-        btnTemplate = () => `<input type="checkbox" id="toggle-${id}">
-          <label class="mere-show-more--label-js" for="toggle-${id}">
-            <span class="more">${showMoreText}</span>
-            <span class="less">${showLessTExt}</span>
+        btnTemplate = () => `<input type="checkbox" id="toggle-${id}" class="mere-show-more--input">
+          <label class="mere-show-more--label mere-show-more--label-js" for="toggle-${id}">
+            <span class="mere-show-more--more">${showMoreText}</span>
+            <span class="mere-show-more--less">${showLessTExt}</span>
           </label>`,
 
         fullContHeight = fullCont.offsetHeight,
