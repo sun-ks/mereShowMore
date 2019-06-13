@@ -1,12 +1,11 @@
 const mereShowMore = (obj) => {
 
-    const el = document.querySelector(obj.elClass),
+    const el = document.getElementById(obj.elId),
         btn = el.querySelector('.mere-show-more--label-js'),
-
         fullCont = el.querySelector('.mere-show-more--cont-full-js'),
 
-        btnTemplate = () => `<input type="checkbox" id="toggle">
-          <label class="mere-show-more--label-js" for="toggle">
+        btnTemplate = () => `<input type="checkbox" id="toggle-${id}">
+          <label class="mere-show-more--label-js" for="toggle-${id}">
             <span class="more">${showMoreText}</span>
             <span class="less">${showLessTExt}</span>
           </label>`,
@@ -20,10 +19,9 @@ const mereShowMore = (obj) => {
 
     let hiddenCont = null;
 
-    if (fullContHeight > heightBlock) { console.log('11');
+    if (fullContHeight > heightBlock) {
 
-
-        el.insertAdjacentHTML('afterbegin', btnTemplate(showMoreText, showLessTExt));
+        el.insertAdjacentHTML('afterbegin', btnTemplate(showMoreText, showLessTExt, id = obj.elId));
 
         hiddenCont = el.querySelector('.mere-show-more--cont-hidden-js');
 

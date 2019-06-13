@@ -15,32 +15,42 @@
 
 <body>
     <h2 class="title-h2"> This block need - Show more</h2>
-    <div class="mere-show-more example-show-more-js">
+    <div class="mere-show-more" id="example-show-more01">
          <div class="mere-show-more--cont-hidden mere-show-more--cont-hidden-js">
             <span class="mere-show-more--cont-full-js">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
          </div>
     </div>
 
      <h2 class="title-h2"> This block does not need - Show more</h2>
-     <div class="mere-show-more example-show-more-02-js">
+     <div class="mere-show-more" id="example-show-more02">
           <div class="mere-show-more--cont-hidden mere-show-more--cont-hidden-js">
              <span class="mere-show-more--cont-full-js">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
           </div>
      </div>
 
+     <h2 class="title-h2">Other show more</h2>
+     <div class="mere-show-more" id="example-show-more03">
+          <div class="mere-show-more--cont-hidden mere-show-more--cont-hidden-js">
+             <span class="mere-show-more--cont-full-js">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+          </div>
+     </div>
 
     <script>
         mereShowMore({
-            'elClass': '.example-show-more-js',
+            'elId': 'example-show-more01',
             'showMoreText': 'my show more text',
             'showLessTExt': 'my show less text',
             'heightBlock': 30
-
         });
 
         mereShowMore({
-            'elClass': '.example-show-more-02-js',
+            'elId': 'example-show-more02',
             'heightBlock': 30000
+        });
+
+        mereShowMore({
+            'elId': 'example-show-more03',
+            'heightBlock': 40
         });
     </script>
 </body>
